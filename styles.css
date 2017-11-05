@@ -1,0 +1,12 @@
+.edit-button{
+  margin: 10px;
+  box-shadow:#FF1744 2px 2px 2px;
+}
+.delete-button{
+  margin: 10px;
+  box-shadow:#FF9800 2px 2px 2px;
+}
+
+td{
+  width: 20%;
+}
