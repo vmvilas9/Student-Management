@@ -32,7 +32,7 @@ function make_data()
 
 const data = make_data();
 
-
+#make modal data
 function make_modal(data){
     console.log("adadsfa");
     $('.modal-content').html('')
