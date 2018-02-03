@@ -87,8 +87,6 @@ $(document).ready(() => {
               <td>${data[i].roll_no}</td>
               <td>${data[i].name}</td>
               <td>${data[i].pass}</td><td>${data[i].stream}</td>
-              </br>
-              <tr>
               <td class = "text-center edit">
                   <div>
                   <button id=${data[i].roll_no} class="edit-button btn btn-warning" data-toggle="modal" data-target="#myModal">${edit}</button>
@@ -96,7 +94,6 @@ $(document).ready(() => {
                   <input type="checkbox" id=${data[i].roll_no} name="cc" class="checkclass">
                   </div>
               </td>
-              </tr>
           </tr>`;
           $(".put").append(row);
       }
@@ -168,9 +165,14 @@ $(document).ready(() => {
       roll = $('#roll').val();
       str = $('#stream').val();
       pass = $('#year').val();
+      if(roll==''){
+          alert('Enter Roll Number');
+      }
+      else{
       datan= new student(roll,name,pass,str);
       data.push(datan);
       display_data();
+    }
     })
   })
 
