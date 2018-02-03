@@ -111,8 +111,8 @@ $(document).ready(() => {
         }
       }
 
-      $('.submit').click(function(){
-          var flag=0;
+      $('.submit').click(() => {
+          let flag=0;
           nam = $("#name").val();
           roll = $('#roll').val();
           str = $('#stream').val();
@@ -134,7 +134,7 @@ $(document).ready(() => {
       })
   })
 
-  $('.addStudent').click(function(){
+  $('.addStudent').click(() => {
     $('.modal-content').html('')
     $('.modal-content').append(`
     <div class="modal-header">
@@ -160,7 +160,7 @@ $(document).ready(() => {
     </form>
     </div>`
     );
-    $('.submit').click(function(){
+    $('.submit').click(() => {
       name = $("#name").val();
       roll = $('#roll').val();
       str = $('#stream').val();
@@ -176,9 +176,9 @@ $(document).ready(() => {
     })
   })
 
-$('.delStudent').click(function(){
-      var checked=[];
-      var todelete=[];
+$('.delStudent').click(() => {
+      let checked=[];
+      const todelete=[];
       checked =document.getElementsByClassName('checkclass')
       console.log(checked);
       for(let i=0;i<checked.length;i++){
